@@ -16,5 +16,5 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: ML_SERVICE_URL
-        value: http://localhost:8000
+        value: https://machine-learning1-services-4.onrender.com
     healthCheckPath: /health
