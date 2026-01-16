@@ -17,4 +17,6 @@ services:
         generateValue: true
       - key: ML_SERVICE_URL
         value: https://machine-learning1-services-4.onrender.com
+      - key: FRONTEND_URL
+        value: https://machine-learning-platform-theta.vercel.app
     healthCheckPath: /health
