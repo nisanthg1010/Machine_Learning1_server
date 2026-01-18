@@ -4,7 +4,6 @@
 
 const express = require('express');
 const router = express.Router();
-const { protect } = require('../middleware/auth');
 const {
     compareModels,
     getMetricsReference,
@@ -13,8 +12,8 @@ const {
 
 // @route   POST /api/model-comparison/compare-models
 // @desc    Train and compare multiple models
-// @access  Private
-router.post('/compare-models', protect, compareModels);
+// @access  Public
+router.post('/compare-models', compareModels);
 
 // @route   GET /api/model-comparison/metrics-reference
 // @desc    Get metrics reference with formulas

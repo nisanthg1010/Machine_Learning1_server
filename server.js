@@ -14,7 +14,6 @@ dotenv.config();
 // Import routes
 const datasetRoutes = require('./routes/datasetRoutes');
 const experimentRoutes = require('./routes/experimentRoutes');
-const userRoutes = require('./routes/userRoutes');
 const mlRoutes = require('./routes/mlRoutes');
 const modelComparisonRoutes = require('./routes/modelComparisonRoutes');
 
@@ -82,7 +81,6 @@ app.get('/health', (req, res) => {
 // API Routes
 app.use('/api/datasets', datasetRoutes);
 app.use('/api/experiments', experimentRoutes);
-app.use('/api/users', userRoutes);
 app.use('/api/ml', mlRoutes);
 app.use('/api/model-comparison', modelComparisonRoutes);
 
